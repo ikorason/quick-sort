@@ -2,6 +2,11 @@
 #include <list>
 #include <chrono>
 
+// timing test resuults summary
+// random order sort its the fastest with 3ms on my mac m2 machine
+// after that it's all duplicates elements with dramatic increase of 580ms
+// then its reverse sorted order 746ms, and the last one is sorted order with 941ms
+
 // helper function to print list
 template<typename Iter>
 void print(const Iter& begin, const Iter& end, bool new_line = true)
